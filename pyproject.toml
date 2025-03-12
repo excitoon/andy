@@ -1,0 +1,14 @@
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+redis = "^5.2.1"
+psutil = "^7.0.0"
+
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"

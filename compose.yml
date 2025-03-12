@@ -1,0 +1,12 @@
+services:
+  test:
+    build: .
+    pull_policy: build
+
+  poetry:
+    build: .
+    pull_policy: build
+    entrypoint: poetry
+    volumes:
+    - ./poetry.lock:/app/poetry.lock
+    - ./pyproject.toml:/app/pyproject.toml
