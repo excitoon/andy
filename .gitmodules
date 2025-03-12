@@ -1,0 +1,3 @@
+[submodule "contrib/redis-py"]
+	path = contrib/redis-py
+	url = https://github.com/excitoon-favorites/redis-py.git

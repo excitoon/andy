@@ -5,6 +5,7 @@ ENV PATH=/root/.local/bin:$PATH
 
 WORKDIR /app
 
+COPY contrib contrib
 COPY pyproject.toml poetry.lock* .
 
 RUN poetry config virtualenvs.create false
